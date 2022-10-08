@@ -79,4 +79,20 @@ fp_output_description[1]
 fp_output_description[10]
 
 ## Getting the time for the commits
-fp_author = soup.find_all('div' ,class_='time')
+fp_time = soup.find_all('div' ,class_='time')
+
+fp_output_time = []
+for i in fp_time:
+    print(i.text)
+    data = i.text
+    fp_output_time.append(data)
+
+len(fp_output_time)
+fp_output_time[1]
+fp_output_time[10]
+
+## Creating a dataframe with all the information
+df = pd.DataFrame({'commit_title': fp_combined_title, 'commit_description': fp_output_description, 'commit_time': fp_output_time})
+
+## Saving dataframe to csv
+df.to_csv('data/facepunch_commmits.csv')

@@ -1,0 +1,105 @@
+,commit_title,commit_description,commit_time
+0,sbox/scene-cubemap#b89f86,"No longer need env_cubemap_box
+Destroy cubemap object when entity is destroyed
+Support cubemap handshake, this is needed for static objects to find their cubemap",35 Minutes Ago
+1,sbox/tier2addons#30d217,Fix typelibrary trying to replace an assembly with itself,1 Hour Ago
+2,sbox-2dtest/main#7b82b7,"death ui
+death tweaks
+status level num label
+status tooltip level
+status upgrade description",2 Hours Ago
+3,rust_reboot/▄▅▄▍#▊▍▌▅▅,▇▊▌▍█ ▋▆▄▆ ▌▊_▌,2 Hours Ago
+4,rust_reboot/release#75208,merge from main,2 Hours Ago
+5,sbox/master#2638bd,"Hook up the CMapView's CToolCamera so we can have the camera pos/angles and able to build rays from 2d coords
+Hammer traces return their hit MapNode by managed handle so can do `if ( tr.MapNode is MapMesh mesh )` now
+Add MapMesh.SetMaterial( Material )
+Real simple drag handler for material packages - this code is all getting shit though time to rip it up
+Refactored map view drop targets into an interface with attributes: `[CanDrop( Package.Type.Model )] class ModelDropTarget : IMapViewDropTarget`
+Once I wrap CMapView I'll make this public and make it work with standard AssetType too, so you'd be able to create custom drop targets for your game resources.",2 Hours Ago
+6,chippy-backup/main#41e6e2,Backup 2022/10/08 13:50:02 UTC,3 Hours Ago
+7,rust_reboot/main#75207,Merge from FixB - resolves all outstanding known issues relating to layer changes.,4 Hours Ago
+8,Web/master#0497bf,"Steam Item job
+Remove GA",Today
+9,sbox/tier2addons#03b955,"When compiling packed assembly don't use absolute source paths
+Obsolete ResourcePaths
+Add Tags to addonconfig
+Move content and generic addon setup to addon settings
+Don't use freetype in editor",Today
+10,sbox.web/master#05b12c,Support addon tags,Today
+11,sbox.web/master#e172d9,Generate thumb automatically if we don't have one,Today
+12,chippy-backup/main#f567d8,Backup 2022/10/08 07:50:02 UTC,Today
+13,sbox.web/master#cfb89e,"Add package parent, api version
+Tag support",Today
+14,chippy-backup/main#77c8d4,Backup 2022/10/08 01:50:02 UTC,Today
+15,sbox/text-gradients#a27b3b,Remove D_TEXT_BACKGROUND_IMAGE,Today
+16,rust_reboot/main/SeedlingDestroyFixB#75206,"Seedling destroy fix option B: Revert all ragdoll layer changes on plants, and remove ragdoll collision from the vehicle layer again",Today
+17,rust_reboot/main/SeedlingDestroyFixA#75205,Seedling destroy fix option A: Allow Melee attacks to hit the Debris layer,Today
+18,chippy-backup/main#d3709f,Backup 2022/10/07 19:50:02 UTC,Today
+19,rust_reboot/main/performance_sampling#75204,Merge from main -> performance_sampling,Today
+20,sbox-repro/bad-text-gradients#3cb196,Add a few invalid properties,Today
+21,sbox/text-gradients#ec230a,Cleanup & some parser error awareness,Today
+22,sbox/tier2addons#e6b695,Fix multiple addon uploading errors,Today
+23,sbox-unicycle-frenzy/main#d14c0a,color adjustments for balance lean hud,Today
+24,rust_art/main#1170,"horse & dog source files, updated export script",Today
+25,sbox/master#365dc2,Readd single string constructor for TagAttribute,Today
+26,sbox-unicycle-frenzy/main#9b8862,updated lean hud style,Yesterday
+27,rust_reboot/main/nuclear_missile_silo#75203,"Nucelar missile silo progress 
+Finished all LOD0 meshes and placed prefabs in the scene",Yesterday
+28,rust_reboot/main/horse_idles#75202,"Split up horse idle into separate anims (to reduce repetitiveness), added more variants & updated animator",Yesterday
+29,sbox/master#c795f0,"Documentation pass
+VertexBuffer index methods throw if buffer is not indexed
+Obsolete TextureArrayBuilder",Yesterday
+30,sbox.web/master#9aebda,"Give correct error when invalid asset type
+Add extension asset type",Yesterday
+31,sbox/leaderboard-types-2#978ed3,"Added test for adding properties with default values
+Code-first typed leaderboards, support for creation / writing / reading
+Read leaderboard type info from local addon assemblies in tools
+Display custom leaderboard types in the menu
+
+https://files.facepunch.com/ziks/1b2011b1/sbox-dev_xm1fXA5ej8.png
+Fixed leaderboard details having too much padding
+Support for marking entries as deleted in the backend
+Refactor to nest leaderboard attributes etc in the Leaderboard struct
+Built-in support for periodic leaderboards (daily / weekly / monthly)
+More refactoring
+
+* Leaderboard has too many fields to justify being a struct anymore
+* Nested Leaderboard.Update and Leaderboard.Entry
+* Leaderboard<T> can inherit from Leaderboard now, much less repetition
+Leaderboard API documentation
+Finish merging in Histograms",Yesterday
+32,sbox-unicycle-frenzy/main#12b5cd,Adjusted Lean Hud,Yesterday
+33,sbox-unicycle-frenzy-maps/main#5b0919,Adjusted fake tree colour to match the other,Yesterday
+34,sbox-unicycle-frenzy-maps/main#609396,added no leaf tree model,Yesterday
+35,sbox/tier2addons#41039e,"Compile gamemode before extensions
+Better errors when we can't find the package reference
+Switch packaged assembly path
+Change how compiler multiple paths works so we don't get stomping",Yesterday
+36,sbox/master#387e18,"Documentation pass
+
+Hides Prop.weldParent, Prop.childrenProps and Prop.clonedShapes
+TagAttribute can now accept multiple tags at the same time",Yesterday
+37,rust_reboot/main/pets2#75201,Fixed sample navmesh issue in positiontracker when switching nav types,Yesterday
+38,chippy-backup/main#3f6381,Backup 2022/10/07 13:40:02 UTC,Yesterday
+39,sbox/scene-cubemap#e9d094,Summary for bake resource attribute,Yesterday
+40,sbox-unicycle-frenzy-maps/main#9a44d5,Small tree model,Yesterday
+41,sbox/scene-cubemap#9073ee,Forgot to calculate radiance SH,Yesterday
+42,sbox/tier2addons#f5ce25,"Skip loading/transporting ""base"" addon when using a packaged gamemode",Yesterday
+43,rust_reboot/main/ferry_terminal#75200,terminal building - fixed an offset on the pivots,Yesterday
+44,sbox/master#6d5958,"Add Hotload.AssemblyResolver, warn if not assigned when needed
+Set HotloadManager.AssemblyResolver for client / menu / server",Yesterday
+45,rust_reboot/main/ferry_terminal#75199,s2p,Yesterday
+46,rust_reboot/main/ferry_terminal#75198,terminal exterior LODs/Colliders - prefab,Yesterday
+47,sbox/tier2addons#af14c2,"Remove CollectAssemblies
+Fix game addons not hotloading
+Only actually compile a compiler if it needs it
+CompileGroup.BuildAsync can just return a bool
+Allow compilers to reference themselves, passively ignore
+Add addon compiler settings references
+Packaged addon complain if missing assembly, make available to compilegroup
+Gamemodes also provide themselves as the base addon
+Fix extensions not loading second time around
+Give packaged assemblies the first priority - because they might be mocking as base
+Extension compile referencing package gamemode end to end unit test",Yesterday
+48,sbox-unicycle-frenzy-maps/main#09b56f,Fake Cactus model,Yesterday
+49,rust_reboot/main#75197,Skin bundle update,Yesterday
